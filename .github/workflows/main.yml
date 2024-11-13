@@ -8,10 +8,14 @@ on:
         required: true
         default: "5"
         type: number
+ 
+          
      
 jobs: 
   conditional_job:
     runs-on: ubuntu-latest
+    env:
+      amazingnumber: 8
     steps:
       - name: Control input
         shell: bash
@@ -22,6 +26,12 @@ jobs:
             echo "Do not run the job, important is less than 7"
             exit 1
           fi
+      - name: always
+        if: always()
+        run: echo "I run because ${{ env.amazingnumber }} is amazing"
+
+  
+    
       
     
       
