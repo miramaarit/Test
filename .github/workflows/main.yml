@@ -6,10 +6,8 @@ on:
       important:
       description: "Pick a number"
       required: true
-      type: number
       default: "5"
      
-      
 jobs: 
   conditional_job:
     runs-on: ubuntu-latest
