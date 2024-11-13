@@ -7,18 +7,20 @@ on:
         description: "Pick a number"
         required: true
         default: "5"
+        type: number
      
 jobs: 
   conditional_job:
     runs-on: ubuntu-latest
     steps:
       - name: Control input
-        if: ${{ github.event.inputs.important | >= 7}}
-        run: echo "Input is 7 or bigger."
-
-      - name: Don´t run
-        if: ${{ github.event.inputs.important | < 7}}
-        run: echo "Don´t run the job, important is less than 7"
+        run: |
+          if [ ${{ github.event.inputs.important }} -ge 7 ]; then
+           echo "Input is 7 or bigger."
+           else
+           echo "Do not run the job, important is less than 7"
+           exit 1
+          fi
       
     
       
