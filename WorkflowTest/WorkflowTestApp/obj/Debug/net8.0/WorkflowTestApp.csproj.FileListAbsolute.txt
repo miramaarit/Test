@@ -1,0 +1,14 @@
+D:\Cleancodekurs\Workflow\WorkflowTest\WorkflowTestApp\bin\Debug\net8.0\WorkflowTestApp.exe
+D:\Cleancodekurs\Workflow\WorkflowTest\WorkflowTestApp\bin\Debug\net8.0\WorkflowTestApp.deps.json
+D:\Cleancodekurs\Workflow\WorkflowTest\WorkflowTestApp\bin\Debug\net8.0\WorkflowTestApp.runtimeconfig.json
+D:\Cleancodekurs\Workflow\WorkflowTest\WorkflowTestApp\bin\Debug\net8.0\WorkflowTestApp.dll
+D:\Cleancodekurs\Workflow\WorkflowTest\WorkflowTestApp\bin\Debug\net8.0\WorkflowTestApp.pdb
+D:\Cleancodekurs\Workflow\WorkflowTest\WorkflowTestApp\obj\Debug\net8.0\WorkflowTestApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cleancodekurs\Workflow\WorkflowTest\WorkflowTestApp\obj\Debug\net8.0\WorkflowTestApp.AssemblyInfoInputs.cache
+D:\Cleancodekurs\Workflow\WorkflowTest\WorkflowTestApp\obj\Debug\net8.0\WorkflowTestApp.AssemblyInfo.cs
+D:\Cleancodekurs\Workflow\WorkflowTest\WorkflowTestApp\obj\Debug\net8.0\WorkflowTestApp.csproj.CoreCompileInputs.cache
+D:\Cleancodekurs\Workflow\WorkflowTest\WorkflowTestApp\obj\Debug\net8.0\WorkflowTestApp.dll
+D:\Cleancodekurs\Workflow\WorkflowTest\WorkflowTestApp\obj\Debug\net8.0\refint\WorkflowTestApp.dll
+D:\Cleancodekurs\Workflow\WorkflowTest\WorkflowTestApp\obj\Debug\net8.0\WorkflowTestApp.pdb
+D:\Cleancodekurs\Workflow\WorkflowTest\WorkflowTestApp\obj\Debug\net8.0\WorkflowTestApp.genruntimeconfig.cache
+D:\Cleancodekurs\Workflow\WorkflowTest\WorkflowTestApp\obj\Debug\net8.0\ref\WorkflowTestApp.dll
