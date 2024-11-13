@@ -4,21 +4,21 @@ on:
   workflow_dispatch:
     inputs:
       important:
-      description: "Pick a number"
-      required: true
-      default: "5"
+        description: "Pick a number"
+        required: true
+        default: "5"
      
 jobs: 
   conditional_job:
     runs-on: ubuntu-latest
     steps:
-      -name: Control input
-      if: ${{ github.event.inputs.important | >= 7}}
-      run: echo "Input is 7 or bigger."
+      - name: Control input
+        if: ${{ github.event.inputs.important | >= 7}}
+        run: echo "Input is 7 or bigger."
 
-    -name: Don´t run
-    if: ${{ github.event.inputs.important | < 7}}
-    run: echo "Don´t run the job, important is less than 7"
+      - name: Don´t run
+        if: ${{ github.event.inputs.important | < 7}}
+        run: echo "Don´t run the job, important is less than 7"
       
     
       
