@@ -14,12 +14,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Control input
+        shell: bash
         run: |
           if [ ${{ github.event.inputs.important }} -ge 7 ]; then
-           echo "Input is 7 or bigger."
-           else
-           echo "Do not run the job, important is less than 7"
-           exit 1
+            echo "Input is 7 or bigger."
+          else
+            echo "Do not run the job, important is less than 7"
+            exit 1
           fi
       
     
