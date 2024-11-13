@@ -38,6 +38,21 @@ jobs:
         run: | 
           echo echo "Printing all environment variables:"
           env
+
+  build_matrix:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        version: [8.0, 7.0, 6.0]
+
+    steps:
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ matrix.version }}
+
+
   
 
   
