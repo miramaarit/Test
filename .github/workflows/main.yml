@@ -1,4 +1,4 @@
-name: Success if number input is seven or more
+name: Success if number input is seven or more!
 
 on:
   workflow_dispatch:
