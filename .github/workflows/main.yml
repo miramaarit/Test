@@ -7,7 +7,7 @@ on:
       description: "Pick a number"
       required: true
       type: number
-      default: 5
+      default: "5"
      
       
 jobs: 
@@ -15,11 +15,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -name: Control input
-      if: ${{ github.events.inputs.important >= 7}}
+      if: ${{ github.events.inputs.important | >= 7}}
       run: echo "Input is 7 or bigger."
 
     -name: Don´t run
-    if: ${{ github.events.important < 7}}
+    if: ${{ github.events.important | < 7}}
     run: echo "Don´t run the job, important is less than 7"
       
     
