@@ -30,6 +30,16 @@ jobs:
         if: always()
         run: echo "I run because ${{ env.amazingnumber }} is amazing"
 
+  print_env_vars:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Print environment varables
+        shell: bash
+        run: | 
+          echo echo "Printing all environment variables:"
+          env
+  
+
   
     
       
