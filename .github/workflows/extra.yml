@@ -21,7 +21,7 @@ jobs:
     
   failure-handler:
     needs: reminder
-    if: failure()
+    if: ${{ needs.reminder.result == 'failure' }}
     runs-on: ubuntu-latest
     steps:
     - name: Print Birthday
