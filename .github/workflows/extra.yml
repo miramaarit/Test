@@ -15,8 +15,9 @@ jobs:
     steps: 
     - name: Force Failure
       run: |
-         echo "Forcing failure for testing purposes."
-         exit 1 
+         if [ "${{ github.event.inputs.should_fail }}" == "yes" ]; then
+          exit 1
+         fi
     
   failure-handler:
     needs: reminder
