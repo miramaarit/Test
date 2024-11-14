@@ -1,0 +1,30 @@
+name: Important numbers
+
+on:
+  workflow_dispatch:
+    inputs:
+      should_fail:
+        description: 'Shall the step fail? (yes/no)'
+        required: true
+        type: string
+        default: yes
+
+jobs:
+  reminder: 
+    runs-on: ubuntu-latest
+    steps: 
+    - name: Force Failure
+      run: |
+         echo "Forcing failure for testing purposes."
+         exit 1 
+    
+  failure-handler:
+    needs: reminder
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print Birthday
+    - run: echo "Your birthday is 28 of May!"
+  
+ 
+  
