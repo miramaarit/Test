@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Print Birthday
-    - run: echo "Your birthday is 28 of May!"
+    - run: echo "Your birthday is 28 of May"
   
  
   
