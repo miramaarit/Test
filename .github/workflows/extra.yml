@@ -7,7 +7,7 @@ on:
         description: 'Shall the step fail? (yes/no)'
         required: true
         type: string
-        default: yes
+        default: no
 
 jobs:
   reminder: 
