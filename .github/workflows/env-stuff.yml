@@ -1,8 +1,13 @@
 name: test-environments
 on: workflow_dispatch
 jobs: 
-  print-my-varible:
+  print-my-varible-test:
     runs-on: ubuntu-latest
-    environment: Test
+    strategy:
+      matrix:
+        environment: [Test, Develop, Production]
+    environment: ${{ matrix.environment }}
     steps:
-      - run: echo "${{ vars.MY_VARIABLE }}"
+      - run: echo "Running in ${{ matrix.environment }} environment with value :${{ vars.MY_VARIABLE }}"
+
+
