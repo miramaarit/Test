@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     environment: Test
     steps:
-      - run: echo "${{ vars.MIN_VARIABEL }}
+      - run: echo "${{ vars.MY_VARIABLE }}
