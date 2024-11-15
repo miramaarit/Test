@@ -1,0 +1,8 @@
+name: test-environments
+on: workflow_dispatch
+jobs: 
+  print-my-varible:
+    runs-on: ubuntu-latest
+    environment: Test
+    steps:
+      - run: echo "${{ vars.MIN_VARIABEL }}
